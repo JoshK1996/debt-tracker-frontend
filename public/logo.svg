@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gradient Background -->
+  <defs>
+    <linearGradient id="paint0_linear" x1="0" y1="0" x2="200" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0096FB"/>
+      <stop offset="1" stop-color="#8849FF"/>
+    </linearGradient>
+    <linearGradient id="paint1_linear" x1="60" y1="70" x2="140" y2="130" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#38B6FF"/>
+      <stop offset="1" stop-color="#9B6DFF"/>
+    </linearGradient>
+    <filter id="shadow" x="-10" y="-10" width="220" height="220" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation="5"/>
+      <feOffset dy="4"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+  </defs>
+  
+  <!-- Glass Circle Background -->
+  <circle cx="100" cy="100" r="90" fill="url(#paint0_linear)" fill-opacity="0.1" filter="url(#shadow)"/>
+  <circle cx="100" cy="100" r="80" fill="url(#paint0_linear)" fill-opacity="0.2"/>
+  
+  <!-- Dollar Sign -->
+  <path d="M100 45C96.8 45 94 47.8 94 51V57H85C81.8 57 79 59.8 79 63C79 66.2 81.8 69 85 69H94V131H85C81.8 131 79 133.8 79 137C79 140.2 81.8 143 85 143H94V149C94 152.2 96.8 155 100 155C103.2 155 106 152.2 106 149V143H115C118.2 143 121 140.2 121 137C121 133.8 118.2 131 115 131H106V69H115C118.2 69 121 66.2 121 63C121 59.8 118.2 57 115 57H106V51C106 47.8 103.2 45 100 45Z" fill="white"/>
+  
+  <!-- Chart Lines -->
+  <path d="M55 100L80 85L105 95L130 75L155 85" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Glow Effects -->
+  <circle cx="100" cy="100" r="70" stroke="url(#paint1_linear)" stroke-width="2" stroke-opacity="0.7"/>
+  <circle cx="100" cy="100" r="60" stroke="white" stroke-width="1" stroke-opacity="0.3"/>
+</svg>
